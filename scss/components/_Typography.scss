@@ -1,0 +1,31 @@
+
+.link {
+  color: $color-link;
+  text-decoration: none;
+}
+
+.blockquote {
+  border-left: 7px solid $color-primary;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 21px;
+  text-align: left;
+}
+
+.headline {
+  &--primary {
+    color: $color-primary;
+    font-family: $font-stack-primary;
+    font-size: 35px;
+    margin-left: 25px;
+    text-align: left;
+  }
+  &--secondary {
+    margin-bottom: 1em;
+    text-align: left;
+  }
+}
+
+.grid__col--8 .card {
+  margin-right: 20px;
+}

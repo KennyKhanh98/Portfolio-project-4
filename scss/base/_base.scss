@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @include mq($breakpoint-mid) {
+    display: flex;
+  }
+}
+
+p {
+  padding-left: 10px;
+  background: $white;
+  text-align: left;
+}

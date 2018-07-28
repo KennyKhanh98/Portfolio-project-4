@@ -1,0 +1,50 @@
+
+.btn--info {
+  @extend %btn;
+  background: $color-info;
+}
+.btn--error {
+  @extend %btn;
+  background: $color-error;
+}
+.btn--default {
+  @extend %btn;
+  background: $color-link;
+}
+.btn--success {
+  @extend %btn;
+  background: $color-success;
+}
+.btn--warning {
+  @extend %btn;
+  background: $color-warning;
+}
+
+.grid__col--12.theme__colors {
+  @extend %grid;
+  background: $color-primary;
+}
+.grid__col--6.theme__colors {
+  @extend %grid;
+  background: $color-col-6;
+}
+.grid__col--4.theme__colors {
+  @extend %grid;
+  background: $color-col-4;
+}
+.grid__col--3.theme__colors {
+  @extend %grid;
+  background: $color-col-3;
+}
+.grid__col--5.theme__colors {
+  @extend %grid;
+  background: $color-col-5;
+}
+.grid__col--7.theme__colors {
+  @extend %grid;
+  background: $color-col-7;
+}
+.grid__col--8.theme__colors {
+  @extend %grid;
+  background: $color-col-8;
+}

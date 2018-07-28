@@ -1,0 +1,23 @@
+.grid__col--6 .img--avatar {
+  padding-top: 20px;
+}
+
+.img {
+  &--logo {
+    background: $white;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  &--frame {
+    border: 1px solid $color-border;
+    padding: 10px 10px;
+
+    @include mq($breakpoint-mid) {
+      margin-left: 10px;
+    }
+  }
+  &--avatar {
+    display: block;
+    margin: auto;
+  }
+}

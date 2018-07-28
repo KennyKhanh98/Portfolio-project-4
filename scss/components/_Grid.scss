@@ -1,0 +1,27 @@
+.container {
+  max-width: $max-width-sm;
+  text-align: center;
+  padding: 20px;
+  color: $color-paragraph;
+  line-height: 1.5;
+  font-family: $font-stack-secondary;
+  margin: auto;
+
+  @include mq($breakpoint-mid) {
+    max-width: $max-width-lg;
+  }
+
+}
+
+.grid__row {
+  margin-bottom: 50px;
+
+  @include mq($breakpoint-mid) {
+    @include flexy($disp:flex, $dir: row, $just:space-between);
+
+    .grid__col--12 {
+      display: flex;
+      width: 100%;
+    }
+  }
+}

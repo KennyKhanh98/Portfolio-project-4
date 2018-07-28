@@ -1,0 +1,48 @@
+// =========================================
+//  Mixins
+// =========================================
+
+/* MEDIA QUERIES ---------------------------------- */
+
+@mixin mq($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--3 {
+    flex: 20%;
+  }
+
+  .grid__col--9 {
+    flex: 60%;
+  }
+
+  .grid__col--7.theme__colors.centered {
+    flex-basis: 60%;
+    margin: auto;
+  }
+
+  .grid__col--5.theme__colors {
+    flex-basis: 75%;
+  }
+
+  .grid__col--4.theme__colors {
+    flex-basis: 50%;
+  }
+}
+
+/* FLEXBOX SETTINGS ---------------------------------- */
+
+@mixin flexy($disp: flex,
+    $dir: null,
+    $wrap:null,
+    $alig: null,
+    $just:null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  align-items: $alig;
+  justify-content: $just;
+}
